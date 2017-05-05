@@ -5,32 +5,7 @@ while(have_posts()): the_post();
 ?>
 <section class="contact-content">
   <article>
-    <div class="contactform">
-      <h1>Contact <span>Us</span></h1>
-      <h2>Get in touch</h2>
-      <p>Leave us your comments or suggestions</p>
-      <ul>
-        <li>
-          <label>Name*</label>
-          <input type="text" name="">
-        </li>
-        <li>
-          <label>Email Address*</label>
-          <input type="email" name="">
-        </li>
-        <li>
-          <label>Contact Number*</label>
-          <input type="text" name="">
-        </li>
-        <li>
-          <label>Message*</label>
-          <textarea></textarea>
-        </li>
-        <li>
-          <input type="submit" name="" value="SEND">
-        </li>
-      </ul>
-    </div>
+    <?php the_content(); ?>
     <aside>
       <h4>Address and Directions:</h4>
       <ul>
