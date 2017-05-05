@@ -17,7 +17,6 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>DATEM WATER</title>
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
@@ -35,7 +34,7 @@
 </head>
 <body>
 	<header>
-		<aside><a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/datem-water-logo.png"></a></aside>
+		<aside><a href="<?php echo site_url() ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/datem-water-logo.png"></a></aside>
 		<nav class="nav-main">
 			<ul>
 				<li><a href="<?php echo site_url() ?>">HOME</a></li>
@@ -48,12 +47,10 @@
 		<button class="toggle-menu menu-right push-body"><i class="fa fa-bars" aria-hidden="true"></i> MENU</button>
 		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
 			<h3>Menu</h3>
-
-			<p><a href="index.html">HOME</a></p>
-			<p><a href="about.html">ABOUT US</a></p>
-			<p><a href="services.html">SERVICES</a></p>
-			<p><a href="projects.html">PROJECTS</a></p>
-			<p><a href="contact.html">CONTACT US</a></p>
-
+			<p><a href="<?php echo site_url() ?>">HOME</a></p>
+			<p><a href="<?php echo get_the_permalink(9) ?>">ABOUT US</a></p>
+			<p><a href="<?php echo get_the_permalink(13) ?>">SERVICES</a></p>
+			<p><a href="<?php echo get_the_permalink(15) ?>">PROJECTS</a></p>
+			<p><a href="<?php echo get_the_permalink(11) ?>">CONTACT US</a></p>
 		</nav>
 	</header>
