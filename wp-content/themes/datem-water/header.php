@@ -38,11 +38,11 @@
 		<aside><a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/datem-water-logo.png"></a></aside>
 		<nav class="nav-main">
 			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT US</a></li>
-				<li><a href="services.html">SERVICES</a></li>
-				<li><a href="projects.html">PROJECTS</a></li>
-				<li><a href="contact.html">CONTACT US</a></li>
+				<li><a href="<?php echo site_url() ?>">HOME</a></li>
+				<li><a href="<?php echo get_the_permalink(9) ?>">ABOUT US</a></li>
+				<li><a href="<?php echo get_the_permalink(13) ?>">SERVICES</a></li>
+				<li><a href="<?php echo get_the_permalink(15) ?>">PROJECTS</a></li>
+				<li><a href="<?php echo get_the_permalink(11) ?>">CONTACT US</a></li>
 			</ul>
 		</nav>
 		<button class="toggle-menu menu-right push-body"><i class="fa fa-bars" aria-hidden="true"></i> MENU</button>
