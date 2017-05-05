@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* FONTS */
+@font-face {
+    font-family: 'aeroextendedregular';
+    src: url('fonts/aeroextended-webfont.woff2') format('woff2'),
+         url('fonts/aeroextended-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'helveticamedium';
+    src: url('fonts/Helvetica LT 65 Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'helveticathin';
+    src: url('fonts/Helvetica Neue CE 35 Thin.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'helveticaregular';
+    src: url('fonts/Helvetica Neue CE 55 Roman.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'helveticabold';
+    src: url('fonts/Helvetica Neue CE 75 Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* RESET */
+* { box-sizing: border-box; outline: none; appearance: none; -webkit-appearance: none; -moz-appearance: none;}
+body, html, h1, h2, h3, h4, h5, h6, ul, ol, header, footer, nav, p {margin: 0; padding: 0;}
+input, textarea, select {appearance: none; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
+
+/* Global */
+body, html {height: 100%; width: 100%}
+body {color: black; font: 1em/1.5em 'helveticaregular';}
+
+.home {width: 100%; height: 100%; background: url(../images/homebg.jpg) no-repeat right top ; position: fixed; z-index: -999999; background-size: cover;}
+header {width: 100%; float: left; height: 30%; background: url(../images/headerbg.png) no-repeat center top fixed; background-size: 100% auto; position: fixed; z-index: 500}
+header aside {width: 30%; height: auto; float: left;}
+header aside img {width: 100%; height: auto;}
+nav {float: right; width: 63%; margin-top: 45px; text-align: center;}
+nav li  {font-size: 1.7em; display: inline-block; margin: 0 30px;}
+nav li a {font-family:'helveticabold'; color: #0c2356; text-decoration: none; -webkit-text-stroke: 1px #d8f0ff;}
+
+.home-content {width: 60%; float: left; top: 32%; position: relative; z-index: 100; padding-left: 5%}
+.home-content h1 {font: 100px/106px 'helveticabold'; color: #2c2d67; font-weight: bold; text-transform: uppercase;margin-bottom: 40px;}
+.home-content h2 {font: 60px/66px 'helveticathin'; color: #2c2d67; text-transform: uppercase; }
+.home-content p {font: 24px/30px 'helveticaregular'; color: #1e71b8}
+
+.about {width: 100%; height: 100%; background: url(../images/aboutbg.jpg) no-repeat right bottom ; background-size: cover; z-index: -999999; float: left; position: fixed;}
+.about-content {width: 100%; float: left; height: 100%; box-sizing: border-box; position: relative;}
+.about-content article {width: 100%; float: left; padding: 13% 35% 20px 5%; box-sizing: border-box; position: relative; }
+.about-content h1 {font: 36px/42px 'aeroextendedregular'; color: #0d2457; margin-bottom: 10px}
+.about-content p {font: 16px/24px 'helveticaregular'; color: #0c2356; margin-bottom: 20px;}
+.about-content ul {margin: 0; padding-left: 25px; font: 16px/24px 'helveticaregular'; color: #0c2356;}
+.about-content li {margin-bottom: 20px;}
+.about-content aside {width: 35%; float: right; position: fixed; right: 0; top: 0;}
+.about-content aside img { height: 100%; width: 100%; object-fit: cover;}
+.about-content a {color: #0c2356; text-decoration: none;}
+.logos {margin-top: 20px; float: left;}
+
+.services {width: 100%; height: 100%; background: url(../images/servicesbg.jpg) no-repeat left bottom ; background-size: cover; position: fixed; z-index: -999999;}
+.services-content {width: 100%; float: left; height: 100%; box-sizing: border-box; position: relative;}
+.services-content article {width: 57%; float: right; text-align: right; padding: 13% 5% 20px 5%; box-sizing: border-box; position: relative; }
+.services-content h1 {font: 48px/54px 'aeroextendedregular'; color: #0c2356; text-transform: uppercase;}
+.services-content h2 {font: 36px/42px 'helveticathin'; color: #1e3070; margin-bottom: 40px;}
+.services-content ul {list-style: none; margin: 0; padding: 0; width: 85%; float: right; position: relative;}
+.services-content li {position: relative; background:#2b55a2; border: solid 8px rgba(255,255,255,0.8); border-radius: 30px; margin-bottom: 35px; width: 100%; float: left; box-shadow: 0 3px 5px rgba(0,0,0,0.2) }
+.services-content li article {width: 100%;padding-right: 128px;  box-sizing: border-box; float: left; background:#2b55a2; border-radius: 30px; padding: 0; position: relative;}
+.services-content li article h3 {width: 100%;  float: left; padding: 10px 88px 10px 15px; box-sizing: border-box; color: white; margin-top: 0; font: 28px/34px 'helveticaregular'; border-radius: 30px 30px 0 0; text-align: left!important; position: relative;}
+.services-content li article p a {font: 18px/24px 'helveticaregular'; color: #91cef4; padding-right: 88px; float: right; margin: 5px; }
+.services-content li aside {position: absolute; width: ; top: -15px; right: -40px;}
+
+.projects {width: 100%; height: 100%; background: url(../images/projectbg.jpg) no-repeat center center; background-size: cover; position: fixed; z-index: -999999}
+.projects-content {width: 100%; float: left; height: 100%; box-sizing: border-box; position: relative;}
+.projects-content article {width: 100%; float: left; padding: 6.5% 10% 0 30%; height:100%;box-sizing: border-box; position: relative; z-index: 100; }
+.projects-content ul {list-style: none; margin: 0; padding: 0; width: 100%; height: 100%; float: left; position: relative; border-top: solid 10px white;}
+.projects-content li {position: relative; background:white; width: 100%; float: left; height: 50%!important  }
+.projects-content li article {padding: 0 0 10px!important;}
+.projects-content li article div {width: 100%; text-align: right; float: left; position: absolute; z-index: 101; bottom: 10px; padding: 10px 12% 10px 17%; box-sizing: border-box; background: rgba(0,57,97,0.78);}
+.projects-content li aside {width: 100%; height: 100%; float: left;}
+.projects-content li aside img {width: 100%; height: 100%; object-fit: cover;}
+.projects-content a {color: white;}
+.projects-content li article div h3 {font: 28px/34px 'helveticathin'; text-transform: uppercase;}
+.projects-content li article div p {font: 16px/22px 'helveticamedium'; }
+.projright {width: 30%; float: right; position: fixed; bottom: 0; height: 100%; background: url(../images/projectright.png) no-repeat left bottom; z-index: 200; right: 0; background-size: auto 100%; }
+.projleft {width: 40%; float: left; position: fixed; bottom: 0; left: 0; height: 100%; background: url(../images/projectleft.png) no-repeat right bottom; z-index: 200; background-size: cover; padding: 20% 5% 0; box-sizing: border-box;}
+.projleft h1 {font: 44px/50px 'aeroextendedregular'; color: #0c2356; margin-bottom: 10px;}
+.projleft h2 {font: 36px/42px 'helveticathin'; color: #0c2356;}
+
+.contact {width: 100%; height: 100%; background: url(../images/contactbg.jpg) no-repeat center center; background-size: cover; position: fixed;  z-index: -999999}
+.contact-content {width: 100%; float: left; height: 100%; box-sizing: border-box; position: relative;}
+.contact-content article {width: 62%; padding: 25px; font: 18px/24px 'helveticaregular'; color: white; box-sizing: border-box; min-height: 68%; left: 5%; float: left; position: relative; background: url(../images/contactbg2.png) no-repeat ; background-size: cover; background-blend-mode: multiply; margin-top: 14%;}
+	.contact-content article .contactform {width: 45%; float: left; position: relative;border-right: 3px solid white; }
+	.contact-content article h1 {font: 36px/42px 'aeroextendedregular'; color: white; margin-bottom:5px; text-transform: uppercase;}
+	.contact-content article h1 span {color: #00acec;}
+	.contact-content article h2 {font: 24px/30px 'helveticabold'; font-weight: bold; margin-bottom: 5px;}
+	.contact-content article p {font: 20px/26px 'helveticathin'; margin-bottom: 25px;}
+	.contact-content article ul {list-style: none; margin: 0; padding: 0;}
+	.contact-content article li {margin-bottom: 10px;}
+	.contact-content article label {width: 100%; font: 16px/22px 'helveticaregular'; margin-bottom: 5px;}
+	.contact-content input[type="text"], .contact-content input[type="email"], .contact-content input[type="number"], textarea {width: 90%; padding: 5px 10px; height: 27px; box-sizing: border-box; border: solid 1px #f1f0ef; background: #f1f0ef; outline: none;}
+	textarea {height: 120px;}
+	.contact-content article div li:last-child {text-align: right; width: 90%;}
+	.contact-content article div li:last-child input[type="submit"] {font: 16px/22px 'helveticaregular'; background:#00acec; color: #222054; padding: 5px 15px; border: 0;}
+	.contact-content aside {width: 55%; float: right; padding-left: 5%; box-sizing: border-box; height: 97%; margin-top: 3%;}
+	.contact-content aside li {font: 16px/22px 'helveticaregular'; padding-left: 25px; box-sizing: border-box; margin-bottom: 15px;}
+	.contact-content aside li:last-child {padding-left: 75px}
+	.contact-content aside h4 {margin-bottom: 5px; font: 16px/22px 'helveticabold'}
+	.address {background: url(../images/address.png) no-repeat left 5px;}
+	.contactno {background: url(../images/phone.png) no-repeat left 5px;}
+	.email {background: url(../images/email.png) no-repeat left 5px;}
+	.social {background: url(../images/social.png) no-repeat left 5px;}
+.gradient {background: rgba(43,85,162,1);
+background: -moz-linear-gradient(top, rgba(43,85,162,1) 0%, rgba(61,119,200,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(43,85,162,1)), color-stop(100%, rgba(61,119,200,1)));
+background: -webkit-linear-gradient(top, rgba(43,85,162,1) 0%, rgba(61,119,200,1) 100%);
+background: -o-linear-gradient(top, rgba(43,85,162,1) 0%, rgba(61,119,200,1) 100%);
+background: -ms-linear-gradient(top, rgba(43,85,162,1) 0%, rgba(61,119,200,1) 100%);
+background: linear-gradient(to bottom, rgba(43,85,162,1) 0%, rgba(61,119,200,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b55a2', endColorstr='#3d77c8', GradientType=0 );}
+
+.white-popup {
+  position: relative;
+  background: rgba(232,244,251,1);
+background: -moz-linear-gradient(top, rgba(232,244,251,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(232,244,251,1)), color-stop(38%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top, rgba(232,244,251,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(top, rgba(232,244,251,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(232,244,251,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+background: linear-gradient(to bottom, rgba(232,244,251,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8f4fb', endColorstr='#ffffff', GradientType=0 );
+  padding: 40px 65px;
+  width: auto;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 50px 0 50px; 
+  min-height:500px;
+  box-sizing: border-box;
+  border: solid 5px #00abec;
+}
+.white-popup2 {
+  position: relative;
+  background: rgba(232,244,251,1);
+background: -moz-linear-gradient(top, rgba(232,244,251,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(232,244,251,1)), color-stop(38%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top, rgba(232,244,251,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(top, rgba(232,244,251,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(232,244,251,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+background: linear-gradient(to bottom, rgba(232,244,251,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8f4fb', endColorstr='#ffffff', GradientType=0 );
+  padding: 5px;
+  width: auto;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 50px 0 50px; 
+  height:500px;
+  box-sizing: border-box;
+  border: solid 5px #00abec;
+}
+.contents img {max-width: 100%; height: auto; }
+.contents h3 {font: 24px/30px 'aeroextendedregular'; color: #0c2356; text-align: center;}
+.contents p {font: 13px/19px 'helveticaregular'; color: black; margin: 0 15px;}
+.carousel-container {
+  display: flex;
+}
+
+.carousel {
+  background: transparent;
+  margin-bottom: 0;
+  flex-grow: 1;
+  border-radius: 50px 0 0 0;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 480px;
+  margin-right: 10px;
+ 
+  border-radius: 50px 0 0 0;
+  
+}
+.carousel-main img {border-radius: 50px 0 0 0;}
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+.carousel-nav {
+  width: 300px;
+  margin-left: 10px;
+  height: 460px!important;
+  overflow-y: scroll;
+  border-radius: 0 0 50px 0;
+  margin-top: 5px;
+}
+
+.carousel-nav .carousel-cell {
+  height: 96px!important;
+  width: 100%;
+  margin: 0 0 5px 0;
+  cursor: pointer;
+  background: black;
+  border-radius: 0!important;
+  overflow: hidden; 
+}
+.carousel-nav .carousel-cell img {width: 100%; height: 100%; object-fit: cover; 
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.carousel-nav .carousel-cell:before {
+
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  background: black;
+}
+.carousel-nav .carousel-cell.is-nav-selected img { -webkit-filter:none; filter: none!important}
+.flickity-prev-next-button, .flickity-page-dots {display: none!important;}
+.google-maps {
+        position: relative;
+        padding-bottom: 45%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+.toggle-menu {display: none; background: transparent; border: 0;position: absolute; top: 5px; right: 20px; font: 18px/30px 'helveticaregular'; color: #0c2356 }

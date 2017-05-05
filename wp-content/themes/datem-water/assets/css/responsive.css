@@ -1,0 +1,368 @@
+@media screen and (max-width: 1600px) and (min-width: 1441px) {
+	nav li {font-size: 1.5em; margin: 0 20px; }
+	nav {margin-top: 40px;}
+	.home-content h1 {font: 85px/91px 'helveticabold'; font-weight: bold;}
+	.home-content h2 {font: 50px/56px 'helveticathin'; }
+	.home-content p {font: 20px/26px 'helveticaregular'; }
+
+	/*Projects*/
+	.projects-content article {padding: 6.5% 7% 0 28%;}
+	.projects-content li article div {padding: 10px 13.5% 10px 18%;}
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1380px) {
+	nav li {font-size: 1.4em; margin: 0 20px; }
+	nav {margin-top: 30px;}
+	.home-content h1 {font: 85px/91px 'helveticabold'; font-weight: bold;}
+	.home-content h2 {font: 50px/56px 'helveticathin'; }
+	.home-content p {font: 20px/26px 'helveticaregular'; }
+	.about-content p, .about-content ul {font: 14px/20px 'helveticaregular'!important;}
+
+	/*Projects*/
+	.projects-content article {padding: 6.5% 7% 0 28%;}
+	.projects-content li article div {padding: 10px 13.5% 10px 18%;}
+
+	/*Contact*/
+	.contact-content article h1 {font: 24px/30px 'aeroextendedregular';}
+	.contact-content article h2 {font: 18px/24px 'helveticabold'; font-weight: bold; margin-bottom: 5px;}
+	.contact-content article p {font: 16px/22px 'helveticathin'; margin-bottom: 25px;}
+}
+
+@media screen and (max-width: 1379px) and (min-width: 1280px) {
+	nav li {font-size: 1.4em; margin: 0 20px; }
+	nav {margin-top: 30px;}
+	.home-content {width: 64%; top: 26%}
+	.home-content h1 {font: 80px/86px 'helveticabold'; font-weight: bold;}
+	.home-content h2 {font: 42px/48px 'helveticathin'; }
+	.home-content p {font: 20px/26px 'helveticaregular'; width: 95%; }
+	.about-content p, .about-content ul {font: 14px/20px 'helveticaregular'!important;}
+	.home {background-position: right top; }
+	
+	/*Services*/
+	.services-content article {width: 60%;}
+	/*Projects*/
+	.projects-content article {padding: 6.5% 5% 0 25%;}
+	.projects-content li article div {padding: 10px 12% 10px 22%;}
+	.projleft h2 {font: 30px/36px 'helveticathin';}
+	.projects-content li article div h3 {font: 24px/30px 'helveticathin'; text-transform: uppercase;}
+	.projects-content li article div p {font: 14px/20px 'helveticamedium'; }
+
+	/*Contact*/
+	.contact-content article h1 {font: 24px/30px 'aeroextendedregular';}
+	.contact-content article h2 {font: 18px/24px 'helveticabold'; font-weight: bold; margin-bottom: 5px;}
+	.contact-content article p {font: 16px/22px 'helveticathin'; margin-bottom: 20px;}
+	.contact-content article label {font: 14px/20px 'helveticaregular';}
+	.contact-content aside li {font: 14px/22px 'helveticaregular';}
+
+	/*Google Maps*/
+	.google-maps {padding-bottom: 55%;}
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1025px) {
+	header {height: 35%;}
+	nav li {font-size: 1.1em; margin: 0 15px; }
+	nav {margin-top: 25px;}
+	.home-content {width: 55%; top: 23%}
+	.home-content h1 {font: 56px/62px 'helveticabold'; }
+	.home-content h2 {font: 36px/42px 'helveticathin'; }
+	.home-content p {font: 18px/24px 'helveticaregular'; width: 95% }
+	.home {background-position: right bottom; }
+
+	/*About*/
+	.about-content p, .about-content ul {font: 14px/20px 'helveticaregular'!important;}
+
+	/*Services*/
+	.services-content article {width: 65%;}
+	.services-content h2 {font: 30px/36px 'helveticathin';}
+	.services-content li article h3 {font: 24px/30px 'helveticaregular';}
+	/*Projects*/
+	.projects-content article {padding: 6.5% 4% 0 23%;}
+	.projects-content li article div {padding: 10px 14% 10px 22%;}
+	.projleft h2 {font: 28px/34px 'helveticathin';}
+	.projects-content li article div h3 {font: 22px/26px 'helveticathin'; text-transform: uppercase;}
+	.projects-content li article div p {font: 14px/18px 'helveticamedium'; }
+	.projleft {background-position: right bottom; padding: 23% 7% 0 5%;}
+
+	/*Contact*/
+	.contact-content article h1 {font: 24px/30px 'aeroextendedregular';}
+	.contact-content article h2 {font: 18px/24px 'helveticabold'; font-weight: bold; margin-bottom: 5px;}
+	.contact-content article p {font: 16px/22px 'helveticathin'; margin-bottom: 20px;}
+	.contact-content article label {font: 12px/18px 'helveticaregular';}
+	.contact-content aside li {font: 12px/18px 'helveticaregular';}
+	.contact-content article {width: 66%;}
+	/*Google Maps*/
+	.google-maps {padding-bottom: 65%;}
+
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 961px) {
+	nav li {font-size: 16px; margin: 0 10px; }
+	nav {margin-top: 20px;  width: 65%}
+	.home-content {width: 63%; top: 23%}
+	.home-content h1 {font: 62px/68px 'helveticabold'; }
+	.home-content h2 {font: 36px/42px 'helveticathin'; }
+	.home-content p {font: 18px/24px 'helveticaregular'; width: 80%}
+	.home {background-position: right bottom;}
+	
+	/*About*/
+	.about-content p, .about-content ul {font: 14px/20px 'helveticaregular'!important;}
+	.about {background-position: left top!important}
+
+	/*Services*/
+	.services-content article {width: 75%;}
+	.services-content h2 {font: 30px/36px 'helveticathin';}
+	.services-content li article h3 {font: 24px/30px 'helveticaregular';}
+	
+	/*Projects*/
+	.projects-content article {padding: 6.5% 4% 0 23%;}
+	.projects-content li article div {padding: 10px 13% 10px 22%;}
+	.projleft h2 {font: 28px/34px 'helveticathin';}
+	.projects-content li article div h3 {font: 22px/26px 'helveticathin'; text-transform: uppercase;}
+	.projects-content li article div p {font: 14px/18px 'helveticamedium'; }
+	.projleft {background-position: right bottom; padding: 23% 7% 0 5%;}
+
+	/*Contact*/
+	.contact-content article h1 {font: 24px/30px 'aeroextendedregular';}
+	.contact-content article h2 {font: 18px/24px 'helveticabold'; font-weight: bold; margin-bottom: 5px;}
+	.contact-content article p {font: 16px/22px 'helveticathin'; margin-bottom: 20px;}
+	.contact-content article label {font: 12px/18px 'helveticaregular';}
+	.contact-content aside li {font: 12px/18px 'helveticaregular';}
+	.contact-content article {width: 75%;}
+	/*Google Maps*/
+	.google-maps {padding-bottom: 65%;}
+
+	/*Popup*/
+	.white-popup, .white-popup2 {max-width: 90%;}
+
+	/*Carousel*/
+	.carousel-nav {width: 200px;}
+}
+@media screen and (max-width: 960px) and (min-width: 800px) {
+	nav li {font-size: 16px; margin: 0 8px; }
+	nav {margin-top: 20px;  width: 65%}
+	header {width: 100%; float: left;background: url(../images/headerbg.png) no-repeat center top ; background-size: 100% auto; position: fixed;}
+	.home-content {width: 75%; top: 23%; background: rgba(255,255,255,0.6); padding: 15px!important; left: 5%}
+	.home-content h1 {font: 62px/68px 'helveticabold'; }
+	.home-content h2 {font: 36px/42px 'helveticathin'; }
+	.home-content p {font: 18px/24px 'helveticaregular'; }
+	.home {background-position: right bottom;}
+	
+	/*About*/
+	.about-content p, .about-content ul {font: 14px/20px 'helveticaregular'!important;}
+	.about {background-position: left top!important}
+
+	/*Services*/
+	.services-content article {width: 85%;}
+	.services-content h2 {font: 30px/36px 'helveticathin';}
+	.services-content li article h3 {font: 24px/30px 'helveticaregular';}
+	
+	/*Projects*/
+	.projects-content article {padding: 6.5% 4% 0 23%;}
+	.projects-content li article div {padding: 10px 13% 10px 22%;}
+	.projleft h1 {font: 36px/42px 'aeroextendedregular'; }
+	.projleft h2 {font: 22px/28px 'helveticathin';}
+	.projects-content li article div h3 {font: 18px/24px 'helveticathin'; text-transform: uppercase;}
+	.projects-content li article div p {font: 12px/18px 'helveticamedium'; }
+	.projleft {background-position: right bottom; padding: 23% 7% 0 5%;}
+
+	/*Contact*/
+	.contact {background-position: 60% top; }
+	.contact-content article h1 {font: 24px/30px 'aeroextendedregular';}
+	.contact-content article h2 {font: 18px/24px 'helveticabold'; font-weight: bold; margin-bottom: 5px;}
+	.contact-content article p {font: 16px/22px 'helveticathin'; margin-bottom: 20px;}
+	.contact-content article label {font: 12px/18px 'helveticaregular';}
+	.contact-content aside li {font: 12px/18px 'helveticaregular';}
+	.contact-content article {width: 75%;}
+	/*Google Maps*/
+	.google-maps {padding-bottom: 65%;}
+
+	/*Popup*/
+	.white-popup, .white-popup2 {max-width: 90%;}
+
+	/*Carousel*/
+	.carousel-nav {width: 150px;}
+}
+
+@media screen and (max-width: 799px) and (min-width: 641px) {
+	nav li {font-size: 16px; margin: 0 10px; display: none; }
+	nav {margin-top: 20px;  width: 65%}
+	header {width: 100%; float: left; background: url(../images/headerbg.png) no-repeat left top ; background-size: 120% auto; position: fixed;}
+	header aside {width: 35%; height: auto; float: left;}
+	.home-content {width: 80%; top: 25%; background: rgba(255,255,255,0.6); padding: 15px!important; left: 5%}
+	.home-content h1 {font: 50px/56px 'helveticabold'; }
+	.home-content h2 {font: 30px/36px 'helveticathin'; }
+	.home-content p {font: 18px/24px 'helveticaregular'; width: 90% }
+	.home {background-position: right bottom; }
+	.toggle-menu {display: block; margin-top: 10px!important; margin-right: 10px; font-size: 24px }
+	.nav-main {display: none;}
+
+	/*About*/
+	.about-content p, .about-content ul {font: 14px/20px 'helveticaregular'!important;}
+	.about {background-position: left top!important}
+	.about-content article {padding-top: 18%; padding-right: 250px;}
+	.about-content aside {width: 250px;}
+
+	/*Services*/
+	.services-content article {width: 100%; }
+	.services-content h2 {font: 30px/36px 'helveticathin';}
+	.services-content li article h3 {font: 24px/30px 'helveticaregular';}
+	
+	/*Projects*/
+	.projects-content article {padding: 15px 0 0 0;}
+	.projects-content li article div {padding: 10px 10% 10px 5%;}
+	.projleft h1 {font: 36px/42px 'aeroextendedregular'; }
+	.projleft h2 {font: 22px/28px 'helveticathin';}
+	.projects-content li article div h3 {font: 18px/24px 'helveticathin'; text-transform: uppercase;}
+	.projects-content li article div p {font: 12px/18px 'helveticamedium'; }
+	.projleft {background-image: none; width: 100%; position: relative; padding: 21% 10% 15px 5%; height: auto;}
+
+	/*Contact*/
+	.contact {background-position: 60% top; }
+	.contact-content article {margin-top: 18%}
+	.contact-content article h1 {font: 24px/30px 'aeroextendedregular';}
+	.contact-content article h2 {font: 18px/24px 'helveticabold'; font-weight: bold; margin-bottom: 5px;}
+	.contact-content article p {font: 16px/22px 'helveticathin'; margin-bottom: 20px;}
+	.contact-content article label {font: 12px/18px 'helveticaregular';}
+	.contact-content aside li {font: 12px/18px 'helveticaregular';}
+	.contact-content article {width: 90%;}
+	
+	/*Google Maps*/
+	.google-maps {padding-bottom: 65%;}
+
+	/*Popup*/
+	.white-popup, .white-popup2 {max-width: 90%;}
+	/*Carousel*/
+	.carousel-nav {display: none;}
+	.flickity-prev-next-button, .flickity-page-dots {display: block!important;}
+	.carousel-main img, .carousel-cell, .carousel {border-radius: 50px 0 50px 0!important; margin-right: 0;}
+}
+
+/************************************************************************************
+smaller than 641
+*************************************************************************************/
+@media screen and (max-width: 640px) and (min-width: 481px) {
+	nav li {font-size: 16px; margin: 0 10px;  display: none; }
+	nav {margin-top: 20px;  width: 65%}
+	header {width: 100%; float: left;  background: url(../images/headerbg.png) no-repeat left top ; background-size: 150% auto; position: fixed;}
+	header aside {width: 45%; height: auto; float: left;}
+	.home-content {width: 90%; top: 20%; background: rgba(255,255,255,0.6); padding: 15px!important; left: 5%}
+	.home-content h1 {font: 48px/54px 'helveticabold';  margin-bottom: 20px;}
+	.home-content h2 {font: 30px/36px 'helveticathin'; }
+	.home-content p {font: 16px/24px 'helveticaregular'; }
+	.home {background-position: right bottom; }
+	.toggle-menu {display: block; top: 6px; right: 10px; }
+	.nav-main {display: none;}
+
+	/*About*/
+	.about-content p, .about-content ul {font: 14px/20px 'helveticaregular'!important;}
+	.about {background-position: left top!important}
+	.about-content article {padding-top: 20%; padding-right: 5%;}
+	.about-content aside {display: none;}
+
+	/*Services*/
+	.services-content article {width: 100%; padding-top: 21%; }
+	.services-content h1 {font: 36px/42px 'aeroextendedregular';}
+	.services-content h2 {font: 24px/30px 'helveticathin';}
+	.services-content li article h3 {font: 22px/28px 'helveticaregular';}
+	.services-content li article p a {font: 14px/20px 'helveticaregular';}
+	.services-content ul {width: 100%}
+	/*Projects*/
+	.projects-content article {padding: 15px 0 0 0;}
+	.projects-content li article div {padding: 10px 10% 10px 5%;}
+	.projleft h1 {font: 36px/42px 'aeroextendedregular'; }
+	.projleft h2 {font: 22px/28px 'helveticathin';}
+	.projects-content li article div h3 {font: 18px/24px 'helveticathin'; text-transform: uppercase;}
+	.projects-content li article div p {font: 12px/18px 'helveticamedium'; }
+	.projleft {background-image: none; width: 100%; position: relative; padding: 21% 10% 15px 5%; height: auto;}
+
+	/*Contact*/
+	.contact {background-position: right top; }
+	.contact-content article {margin-top: 19%;}
+	.contact-content article h1 {font: 24px/30px 'aeroextendedregular';}
+	.contact-content article h2 {font: 18px/24px 'helveticabold'; font-weight: bold; margin-bottom: 5px;}
+	.contact-content article p {font: 16px/22px 'helveticathin'; margin-bottom: 20px;}
+	.contact-content article label {font: 12px/18px 'helveticaregular';}
+	.contact-content aside li {font: 12px/18px 'helveticaregular';}
+	.contact-content article {width: 90%;}
+	.contact-content input[type="text"], .contact-content input[type="email"], .contact-content input[type="number"], textarea {width: 100%;}
+	.contact-content article .contactform {width: 100%; border: 0; margin-bottom: 15px; border-bottom: solid 3px #fff; padding-bottom: 15px; }
+	.contact-content article div li:last-child {width: 100%}
+	.contact-content aside {width: 100%; padding-left: 0;}
+	/*Google Maps*/
+	.google-maps {padding-bottom: 65%;}
+
+	/*Popup*/
+	.white-popup, .white-popup2 {max-width: 90%;}
+	.white-popup {padding: 15px;}
+	/*Carousel*/
+	.carousel-nav {display: none;}
+	.flickity-prev-next-button, .flickity-page-dots {display: block!important;}
+	.carousel-main img, .carousel-cell, .carousel {border-radius: 50px 0 50px 0!important; margin-right: 0;}
+}
+/************************************************************************************
+smaller than 376
+*************************************************************************************/
+@media screen and (max-width: 480px) and (min-width: 320px) {
+	nav li {font-size: 16px; margin: 0 10px; display: none; }
+	nav {margin-top: 20px;  width: 65%}
+	header {width: 100%; float: left;  background: url(../images/headerbg.png) no-repeat left top ; background-size: 180% auto; position: fixed;}
+	header aside {width: 50%; height: auto; float: left;}
+	.home-content {width: 95%; top: 18%}
+	.home-content h1 {font: 30px/36px 'helveticabold';  margin-bottom: 20px;}
+	.home-content h2 {font: 24px/30px 'helveticathin'; }
+	.home-content p {font: 14px/20px 'helveticaregular'; }
+	.home {background-position: right bottom; background-size: 100% auto; background-attachment: scroll;}
+	.toggle-menu {display: block; top: 3px; right: 10px; position: absolute; }
+	.nav-main {display: none;}
+	
+	/*About*/
+	.about-content p, .about-content ul {font: 14px/20px 'helveticaregular'!important;}
+	.about {background-position: left top!important}
+	.about-content article {padding-top: 23%; padding-right: 5%;}
+	.about-content aside {display: none;}
+	.about-content h1 {font: 30px/36px 'aeroextendedregular';}
+
+	/*Services*/
+	.services-content article {width: 100%; padding-top: 23%; }
+	.services-content h1 {font: 30px/36px 'aeroextendedregular';}
+	.services-content h2 {font: 24px/30px 'helveticathin';}
+	.services-content h2 br {display: none;}
+	.services-content li article h3 {font: 18px/24px 'helveticaregular';}
+	.services-content li article p a {font: 14px/20px 'helveticaregular';}
+	.services-content ul {width: 100%}
+
+	/*Projects*/
+	.projects-content article {padding: 15px 0 0 0;}
+	.projects-content li article div {padding: 10px 10% 10px 5%;}
+	.projleft h1 {font: 30px/36px 'aeroextendedregular'; }
+	.projleft h2 {font: 18px/24px 'helveticathin';}
+	.projects-content li article div h3 {font: 18px/24px 'helveticathin'; text-transform: uppercase;}
+	.projects-content li article div p {font: 12px/18px 'helveticamedium'; }
+	.projleft {background-image: none; width: 100%; position: relative; padding: 21% 10% 15px 5%; height: auto;}
+
+	/*Contact*/
+	.contact {background-position: right top; }
+	.contact-content article {margin-top: 23%;}
+	.contact-content article h1 {font: 24px/30px 'aeroextendedregular';}
+	.contact-content article h2 {font: 18px/24px 'helveticabold'; font-weight: bold; margin-bottom: 5px;}
+	.contact-content article p {font: 16px/22px 'helveticathin'; margin-bottom: 20px;}
+	.contact-content article label {font: 12px/18px 'helveticaregular';}
+	.contact-content aside li {font: 12px/18px 'helveticaregular';}
+	.contact-content article {width: 90%;}
+	.contact-content input[type="text"], .contact-content input[type="email"], .contact-content input[type="number"], textarea {width: 100%;}
+	.contact-content article .contactform {width: 100%; border: 0; margin-bottom: 15px; border-bottom: solid 3px #fff; padding-bottom: 15px; }
+	.contact-content article div li:last-child {width: 100%}
+	.contact-content aside {width: 100%; padding-left: 0;}
+	/*Google Maps*/
+	.google-maps {padding-bottom: 65%;}
+	/*Popup*/
+	.white-popup, .white-popup2 {max-width: 90%;}
+	.white-popup {padding: 15px;}
+	/*Carousel*/
+	.carousel-nav {display: none;}
+	.flickity-prev-next-button, .flickity-page-dots {display: block!important;}
+	.carousel-main img, .carousel-cell, .carousel {border-radius: 50px 0 50px 0!important; margin-right: 0;}
+
+}
+
