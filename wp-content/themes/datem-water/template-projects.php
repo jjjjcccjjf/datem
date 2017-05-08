@@ -14,7 +14,7 @@ while(have_posts()): the_post();
   <article>
     <ul>
       <li>
-        <a href="index.html" data-mfp-src="#test-popup" class="open-popup-link">
+        <a href="#" data-mfp-src="#test-popup" class="open-popup-link">
           <article>
             <div>
               <h3>METRO KALIBO WATER DISTRICT</h3>
@@ -27,7 +27,7 @@ while(have_posts()): the_post();
           </a>
         </li>
         <li>
-          <a href="index.html" data-mfp-src="#test-popup1" class="open-popup-link">
+          <a href="#" data-mfp-src="#test-popup1" class="open-popup-link">
             <article>
               <div>
                 <h3>METRO KALIBO WATER DISTRICT</h3>
@@ -40,7 +40,7 @@ while(have_posts()): the_post();
             </a>
           </li>
           <li>
-            <a href="index.html" data-mfp-src="#test-popup1" class="open-popup-link">
+            <a href="#" data-mfp-src="#test-popup1" class="open-popup-link">
               <article>
                 <div>
                   <h3>METRO KALIBO WATER DISTRICT</h3>
@@ -59,23 +59,16 @@ while(have_posts()): the_post();
               <!-- Flickity HTML init -->
               <div class="carousel carousel-main">
                 <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/metro-kalibo.jpg"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
+                <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sandwich.jpg"></div>
+                <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/metro-kalibo.jpg"></div>
+                <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sandwich.jpg"></div>
               </div>
 
               <div class="carousel-nav">
-                <div class="carousel-cell is-nav-selected"></div>
+                <div class="carousel-cell is-nav-selected"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/metro-kalibo.jpg"></div>
+                <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sandwich.jpg"></div>
                 <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/metro-kalibo.jpg"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
+                <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sandwich.jpg"></div>
               </div>
 
             </div>
@@ -94,9 +87,10 @@ while(have_posts()): the_post();
     ?>
 
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.magnific-popup.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/flickity.pkgd.min.js"></script>
+
     <script type="text/javascript">
     $(document).ready(function() {
-
       $('.open-popup-link').magnificPopup({
         items: [
           {
@@ -115,35 +109,37 @@ while(have_posts()): the_post();
         midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
       });
 
-    });
-    </script>
-    <script src="js/flickity.pkgd.min.js"></script>
-    <script>
-    var $carousel = $('.carousel').flickity();
+      var $carousel = $('.carousel').flickity();
 
-    var $carouselNav = $('.carousel-nav');
-    var $carouselNavCells = $carouselNav.find('.carousel-cell');
+      var $carouselNav = $('.carousel-nav');
+      var $carouselNavCells = $carouselNav.find('.carousel-cell');
 
-    $carouselNav.on( 'click', '.carousel-cell', function( event ) {
-      var index = $( event.currentTarget ).index();
-      $carousel.flickity( 'select', index );
-    });
+      var flkty = $carousel.data('flickity');
+      var navTop  = $carouselNav.position().top;
+      var navCellHeight = $carouselNavCells.height();
+      var navHeight = $carouselNav.height();
 
-    var flkty = $carousel.data('flickity');
-    var navTop  = $carouselNav.position().top;
-    var navCellHeight = $carouselNavCells.height();
-    var navHeight = $carouselNav.height();
-
-    $carousel.on( 'select.flickity', function() {
-      // set selected nav cell
-      $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
-      var $selected = $carouselNavCells.eq( flkty.selectedIndex )
-      .addClass('is-nav-selected');
-      // scroll nav
-      var scrollY = $selected.position().top +
-      $carouselNav.scrollTop() - ( navHeight + navCellHeight ) / 2;
-      $carouselNav.animate({
-        scrollTop: scrollY
+      $carouselNav.on( 'click', '.carousel-cell', function( event ) {
+        var index = $( event.currentTarget ).index();
+        $carousel.flickity('select', index);
+        console.log();
       });
-    });
+
+
+      $carousel.on( 'select.flickity', function() {
+        // set selected nav cell
+        $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
+        var $selected = $carouselNavCells.eq( flkty.selectedIndex )
+        .addClass('is-nav-selected');
+
+        // scroll nav
+        var scrollY = $selected.position().top +
+        $carouselNav.scrollTop() - ( navHeight + navCellHeight ) / 2;
+        $carouselNav.animate({
+          scrollTop: scrollY
+        });
+
+      });
+    }); // End document ready
+
     </script>
